@@ -1,0 +1,145 @@
+$primaryFont: 'Poppins',
+sans-serif;
+$secondaryFont: 'Amio Trial',
+sans-serif;
+
+:root {
+    scroll-padding-top: 120px;
+}
+
+body {
+    font-family: $primaryFont;
+    padding-top: 120px;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.navbar {
+    transition: .6s all ease;
+
+    .nav-item {
+        margin-right: 18px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+        }
+    }
+
+    &-brand {
+        font-family: $secondaryFont;
+        font-size: 1.8rem;
+    }
+
+    &-toggler {
+        padding: 0;
+        border: none;
+        font-size: 1.5rem;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+.jumbotron {
+    .perfume-1 {
+        filter: drop-shadow(0 0.6rem 0.3rem rgba(0, 0, 0, .5));
+    }
+}
+
+.featured {
+    .burger-img {
+        height: 300px;
+        border-radius: 15px;
+        transition: .6s all ease;
+
+        &:hover {
+            transform: scale(.98);
+            filter: grayscale(1);
+        }
+    }
+
+    .fa-arrow-right {
+        animation: shakeX 1s infinite alternate;
+    }
+
+    @keyframes shakeX {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(20px);
+        }
+    }
+}
+
+.reviews {
+    .avatar {
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        padding: 3px;
+    }
+}
+
+footer {
+    .logo {
+        font-family: $secondaryFont;
+    }
+
+    .link {
+        text-decoration: none;
+        margin-bottom: 6px;
+        display: block;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.description {
+    font-size: 14px;
+}
+
+.btn {
+    transition: .6s;
+
+    &:hover {
+        transform: scale(.95);
+    }
+}
+
+// Utility Classes
+
+.custom-shadow {
+    box-shadow: rgba($color: #000000, $alpha: 0.25) 0px 2px 5px -1px,
+        rgba($color: #000000, $alpha: 0.3) 0px 1px 3px -1px;
+}
+
+.custom-rounded {
+    border-radius: 15px;
+}
+
+.text-wavy {
+    text-decoration: underline wavy;
+}
+
+// Custom Bootstrap
+.form-control {
+    border: 2px solid gray;
+
+    &:focus {
+        box-shadow: none;
+        border: 2px solid black;
+    }
+}

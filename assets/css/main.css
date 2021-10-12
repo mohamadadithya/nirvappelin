@@ -1,0 +1,156 @@
+:root {
+  scroll-padding-top: 120px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding-top: 120px;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.navbar {
+  -webkit-transition: .6s all ease;
+  transition: .6s all ease;
+}
+
+.navbar .nav-item {
+  margin-right: 18px;
+}
+
+.navbar .nav-item:last-child {
+  margin-right: 0;
+}
+
+.navbar .nav-item:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+}
+
+.navbar-brand {
+  font-family: "Amio Trial", sans-serif;
+  font-size: 1.8rem;
+}
+
+.navbar-toggler {
+  padding: 0;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.jumbotron .perfume-1 {
+  -webkit-filter: drop-shadow(0 0.6rem 0.3rem rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0 0.6rem 0.3rem rgba(0, 0, 0, 0.5));
+}
+
+.featured .burger-img {
+  height: 300px;
+  border-radius: 15px;
+  -webkit-transition: .6s all ease;
+  transition: .6s all ease;
+}
+
+.featured .burger-img:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.featured .fa-arrow-right {
+  -webkit-animation: shakeX 1s infinite alternate;
+          animation: shakeX 1s infinite alternate;
+}
+
+@-webkit-keyframes shakeX {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+}
+
+@keyframes shakeX {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+}
+
+.reviews .avatar {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  padding: 3px;
+}
+
+footer .logo {
+  font-family: "Amio Trial", sans-serif;
+}
+
+footer .link {
+  text-decoration: none;
+  margin-bottom: 6px;
+  display: block;
+}
+
+footer .link:hover {
+  text-decoration: underline;
+}
+
+.description {
+  font-size: 14px;
+}
+
+.btn {
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.btn:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.custom-shadow {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.custom-rounded {
+  border-radius: 15px;
+}
+
+.text-wavy {
+  -webkit-text-decoration: underline wavy;
+          text-decoration: underline wavy;
+}
+
+.form-control {
+  border: 2px solid gray;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 2px solid black;
+}
+/*# sourceMappingURL=main.css.map */
